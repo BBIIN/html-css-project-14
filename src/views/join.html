@@ -57,49 +57,52 @@
             </fieldset>
               <!-- 회원가입 입력 끝  -->
               <!-- 약관동의 체크 리스트 -->
-              <ul class="join__check">
-                <li class="join__check_all">
-                  <input type="checkbox" name="checkAll" id="checkAll"  class="join__checkbox"/>
-                  <label class="join__check_label_all join__checkItem">모두 동의합니다.</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="essential__age" id="essential__age"  class="join__checkbox"/>
-                  <label for="essential__age" class="join__checkItem join__check_label">만 14세 이상입니다.</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="essential__service" id="essential__service" class="join__checkbox"/>
-                  <label class="join__checkItem join__check_label">[필수] 개인정보 수집 및 서비스 활용 동의</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="essential__pageprivacy" id="essential__pageprivacy" class="join__checkbox"/>
-                  <label class="join__checkItem join__check_label">[필수] 채널 홈페이지 개인정보 제 3자 제공동의</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="choice_privacy" id="choice_privacy" class="join__checkbox"/>
-                  <label class="join__checkItem join__check_label">[선택] 개인정보 제 3자 제공동의</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="choice_service" id="choice_service" class="join__checkbox"/>
-                  <label class="join__checkItem join__check_label">[선택] 개인정보 수집 및 서비스 활용 동의</label>
-                </li>
-                <li>
-                  <!-- 약관동의 선택 체크 리스트 -->
-                  <ul class="join__checkList_2">
-                    <li>
-                      <input type="checkbox" name="choice_sms" id="choice_sms" class="join__checkbox"/>
-                      <label class="join__checkItem_2 join__check_label">[선택] 마케팅 정보 SMS 수신동의</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="choice_dlapdilf" id="choice_dlapdilf" class="join__checkbox"/>
-                      <label class="join__checkItem_2 join__check_label">[선택] 마케팅 정보 dlapdlf수신동의</label>
-                    </li>
-                  </ul>
-                  <!-- 약관동의 선택 체크 리스트 끝-->
-                </li>
-              </ul>
+              <fieldset>
+                <legend class="a11yHidden">약관 동의 체크 리스트</legend>
+                <ul class="join__check">
+                  <li>
+                    <input type="checkbox" name="checkAll" id="checkAll"  class="join__checkbox join__check_all"/>
+                    <label for="checkAll" class="join__checkItem join__check_label_all ">모두 동의합니다.</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="essential_1" id="essential_1"  class="join__checkbox"/>
+                    <label for="essential_1" class="join__checkItem join__check_label">만 14세 이상입니다.</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="essential_2" id="essential_2" class="join__checkbox"/>
+                    <label for="essential_2" class="join__checkItem join__check_label">[필수] 개인정보 수집 및 서비스 활용 동의</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="essential_3" id="essential_3" class="join__checkbox"/>
+                    <label for="essential_3" class="join__checkItem join__check_label">[필수] 채널 홈페이지 개인정보 제 3자 제공동의</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="essential_4" id="essential_4" class="join__checkbox"/>
+                    <label for="essential_4" class="join__checkItem join__check_label">[선택] 개인정보 제 3자 제공동의</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="choice_1" id="choice_1" class="join__checkbox"/>
+                    <label for="choice_1" class="join__checkItem join__check_label">[선택] 개인정보 수집 및 서비스 활용 동의</label>
+                  </li>
+                  <li>
+                    <!-- 약관동의 선택 체크 리스트 -->
+                    <ul class="join__check_2">
+                      <li>
+                        <input type="checkbox" name="choice_1-1" id="choice_1-1" class="join__checkbox"/>
+                        <label for="choice_1-1" class="join__checkItem_2 join__check_label">[선택] 마케팅 정보 SMS 수신동의</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="choice_1-2" id="choice_1-2" class="join__checkbox"/>
+                        <label for="choice_1-2" class="join__checkItem_2 join__check_label">[선택] 마케팅 정보 dlapdlf수신동의</label>
+                      </li>
+                    </ul>
+                    <!-- 약관동의 선택 체크 리스트 끝-->
+                  </li>
+                </ul>
+              </fieldset>
               <!-- 약관동의 체크 리스트 끝-->
           </form>
-          <button class="button join__submit">가입하기</button>
+          <button class="join__submit">가입하기</button>
       </div>
   </main>
 

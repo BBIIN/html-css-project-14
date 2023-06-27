@@ -113,24 +113,27 @@ color: #898989;
 .join__checkItem_2{
   margin-top: 8px;
   @include flexbox;
-  gap: 12px;
   appearance: none;
+  & > li {
+    margin-top: ren(18px);
+  }
 }
 
 .join__submit {
   width: 100%;
   height: 96px;
   border: 0;
+  appearance: none;
   background: $gray700;
   color: $gray400;
   border-radius: 4px;
 
   @include mobile {
-    height: 42px;
+    height: rem(42px);
   }
 
   @include tablet {
-    height: 50px;
+    height: rem(50px);
   }
 }
 
@@ -140,44 +143,41 @@ color: #898989;
 .join__check{
   margin-bottom: 24px;
 
-  &__checkItem {
-    display: inline-block;
-    width: 26px;
-    height: 26px;
-    position: relative;
-  }
-
-
 //체크박스 커스텀
   &box {
-  width: rem(26px);
-  height: rem(26px);
-  appearance: none;
-  @include posCenterY;
-
-  :checked + label{
-    background: url(/src/assets/icon/desktop/d_check.svg) no-repeat left;
-    background-size: contain;
-  }
-} 
-
-  &_label {
-    background: url(./../../assets/icon/desktop/d_check2.svg) no-repeat;
-    padding-left: rem(25px);
-    background-size: contain;
-    color: $gray500;
-
-    &_all {
-      background: url(./../../assets/icon/desktop/d_check.svg) no-repeat left;
-      background-size: contain;
-      padding-left: rem(25px);
-      
-      margin: rem(24px) 0;
-    }
-  }
+    width: rem(26px);
+    height: rem(26px);
+    appearance: none;
+    @include pos;
   
 }
+// 약관 동의 체크 전 후
+  &box:checked + label{
+    background: url(../../assets/icon/desktop/d_check2_red.svg) no-repeat left;
+    padding-left: rem(26px);
+    background-size: contain;
+    color: $white;
+  }
+  &_label {
+    background: url(./../../assets/icon/desktop/d_check2.svg) no-repeat;
+    padding-left: rem(26px);
+    background-size: contain;
+  }
+    // 모두 동의 체크 전 후
+  &_label_all {
+    background: url(./../../assets/icon/desktop/d_check.svg) no-repeat left;
+    background-size: contain;
+    padding-left: rem(26px);
+    @include marginY(24px);
+  }
+  &_all:checked + label{
+    background: url(../../assets/icon/desktop/d_check_red.svg) no-repeat left;
+    padding-left: rem(26px);
+    background-size: contain;
+  }
+}
+
 // 선택 체크리스트
-.join__checkList_2 {
+.join__check_2 {
   padding-left: 36px;
 }
